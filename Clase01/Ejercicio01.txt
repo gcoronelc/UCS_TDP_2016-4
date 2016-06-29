@@ -1,0 +1,13 @@
+Encontrar el importe
+de una venta.
+
+Datos:
+  - Precio del artículo (Incluye IGV)
+  - Cantidad
+  
+Calcular
+  - Importe
+  - Impuesto
+  - Total
+
+  
