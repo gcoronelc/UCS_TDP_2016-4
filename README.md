@@ -18,7 +18,7 @@
 
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: www.desarrollasoftware.com
-- Correo: gcoronelc@gmail.com
+- Correo para el curso: egcc.ucs@gmail.com
 
 
 ## Recurso recomendados
@@ -42,6 +42,4 @@
 - Lección 07: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-07-arreglos.html
 - Lección 08: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-08-colecciones.html
 - Lección 09: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-09-excepciones.html
-
-- 
 
