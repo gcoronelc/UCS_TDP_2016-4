@@ -42,4 +42,7 @@
 - Lección 07: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-07-arreglos.html
 - Lección 08: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-08-colecciones.html
 - Lección 09: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-09-excepciones.html
+- Seminario CS: http://gcoronelc.blogspot.pe/2013/06/resumen-seminario-java-cliente-servidor.html
+
+
 
