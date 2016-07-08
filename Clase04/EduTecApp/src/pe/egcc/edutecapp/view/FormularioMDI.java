@@ -1,21 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pe.egcc.edutecapp.view;
+
+import pe.egcc.edutecapp.domain.Empleado;
+import pe.egcc.edutecapp.util.Memoria;
 
 /**
  *
- * @author Docente
+ * @author Gustavo Coronel
+ * @email gcoronelc@gmail.com
+ * @blog www.desarrollasoftware.com
  */
 public class FormularioMDI extends javax.swing.JFrame {
 
-  /**
-   * Creates new form FormularioMDI
-   */
+ 
   public FormularioMDI() {
     initComponents();
+    establecerTitulo();
+  }
+  
+  private void establecerTitulo(){
+    Empleado bean;
+    bean = (Empleado) Memoria.get("usuario");
+    String titulo = " EDUTEC    [Usuario:" +
+            bean.getId() + "]";
+    setTitle(titulo);
   }
 
   /**
