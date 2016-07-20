@@ -1,7 +1,11 @@
 package ClienteServidor.Controller;
 
+import ClienteServidor.Domain.Combo;
 import ClienteServidor.Service.Espec.ProductoServiceEspec;
+import ClienteServidor.Service.Impl.ComboServiceImpl;
 import ClienteServidor.Service.Impl.ProductoServiceImpl;
+import java.util.List;
+import ClienteServidor.Service.Espec.ComboServiceEspec;
 
 /**
  *
@@ -21,4 +25,9 @@ public class ProductoController {
     service.regProducto(idCursoProg, idAlumno);
   }
 
+  
+  public List<Combo> getCategorias(){
+    ComboServiceEspec service = new ComboServiceImpl();
+    return service.getCategorias();
+  }
 }
