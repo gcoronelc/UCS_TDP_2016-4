@@ -1,10 +1,8 @@
 package pe.egcc.edutecapp.prueba;
 
-import pe.egcc.edutecapp.domain.Alumno;
-import pe.egcc.edutecapp.service.espec.AlumnoServiceEspec;
-import pe.egcc.edutecapp.service.espec.MatriculaServiceEspec;
-import pe.egcc.edutecapp.service.impl.AlumnoServiceImpl;
-import pe.egcc.edutecapp.service.impl.MatriculaServiceImpl;
+import pe.egcc.edutecapp.domain.Cliente;
+import pe.egcc.edutecapp.service.impl.ClienteServiceImpl;
+import pe.egcc.edutecapp.service.espec.ClienteServiceEspec;
 
 /**
  *
@@ -17,16 +15,18 @@ public class Prueba04 {
   public static void main(String[] args) {
     
     try {
-      Alumno bean = new Alumno();
-      bean.setApellido("");
+      Cliente bean = new Cliente();
+      bean.setCodigo("");
+      bean.setPaterno("R");
+      bean.setMaterno("o");
       bean.setNombre("");
-      bean.setEmail("hotmail");
-      AlumnoServiceEspec service;
-      service = new AlumnoServiceImpl();
-      for(Alumno a: service.getRecords(bean)){
-        System.out.println(a.getApellido() 
-                + " | " + a.getNombre() 
-                + " | " + a.getEmail());
+      ClienteServiceEspec service;
+      service = new ClienteServiceImpl();
+      for(Cliente a: service.getRecords(bean)){
+        System.out.println(a.getCodigo()
+                + " | " + a.getPaterno()
+                + " | " + a.getMaterno()
+                + " | " + a.getNombre());
       }
     } catch (Exception e) {
       System.err.println(e.getMessage());
