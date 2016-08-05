@@ -9,6 +9,18 @@ h1{
   border-bottom: 1px solid #0B4C5F;
 }
 
+.egcc_info{
+  background-color: #F2F2F2;
+  color: #2E2E2E;
+  padding: 10px;
+}
+
+.egcc_error{
+  background-color: #F6D8CE;
+  color: #610B0B;
+  padding: 10px;
+}
+
 .egcc_page{
   background-color: #E6E6E6;
   color: #424242;

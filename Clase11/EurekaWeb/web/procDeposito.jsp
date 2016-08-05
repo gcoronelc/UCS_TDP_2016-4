@@ -30,6 +30,14 @@
       <div class="egcc_work">
         
         <h1>PROCESO DEPOSITO</h1>
+        
+        <c:if test="${requestScope.info != null}">
+          <p class="egcc_info">${requestScope.info}</p>
+        </c:if>
+        <c:if test="${requestScope.error != null}">
+          <p class="egcc_error">${requestScope.error}</p>
+        </c:if>
+          
         <form method="post" action="ProcDeposito">
           <table>
             <tr>
