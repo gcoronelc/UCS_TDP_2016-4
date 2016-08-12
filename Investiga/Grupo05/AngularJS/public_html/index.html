@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+<body ng-app="angularDemo" ng-controller="DemoController">
+    <h1>Angular JS</h1>
+    <fieldset>
+        <legend>Add a User</legend>
+        <table class="form">
+            <colgroup>
+                <col width="120px"/>
+                <col width="50%"/>
+                <col width="120px"/>
+                <col width="50%"/>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>Username: </td>
+                    <td>
+                        <input type="text" ng-model="tempUser.username"/>
+                    </td>
+                    <td>Password: </td>
+                    <td>
+                        <input type="text" ng-model="tempUser.password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Display Name: </td>
+                    <td>
+                        <input type="text" ng-model="tempUser.displayName"/>
+                    </td>
+                    <td>Email: </td>
+                    <td>
+                        <input type="text" ng-model="tempUser.email"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="button" value="Add" ng-click="addUser()"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <hr/>
+    <table class="data">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Display Name</th>
+                <th>Email</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody class="data">
+            <tr ng-repeat="user in users" class="template-item {{users|oddeven:user}}">
+                <td>
+                    <div class="template-display">{{user.username}}</div>
+                    <div class="template-edit">
+                        <input type="text" ng-model="user.username"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="template-display">
+                        {{user.password}}
+                    </div>
+                    <div class="template-edit">
+                        <input type="text" ng-model="user.password"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="template-display">
+                        {{user.displayName}}
+                    </div>
+                    <div class="template-edit">
+                        <input type="text" ng-model="user.displayName"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="template-display">
+                        {{user.email}}
+                    </div>
+                    <div class="template-edit">
+                        <input type="text" ng-model="user.email"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="template-display">
+                        <input type="button" value="Edit" ng-click="editUser(user)"/>    
+                        <input type="button" value="Delete" ng-click="deleteUser(user)"/>    
+                    </div>
+                    <div class="template-edit">
+                        <input type="button" value="Update" ng-click="updateUser(user)"/>    
+                        <input type="button" value="Cancel" ng-click="cancelEdit(user)"/>    
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

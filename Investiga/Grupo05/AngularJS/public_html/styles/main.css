@@ -1,0 +1,30 @@
+﻿table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+table.data thead th{
+    background-color: #dddddd;
+    font-weight: bold;
+}
+td,th {
+    border: 1px solid #d0d0d0;
+    padding: 6px 4px;
+}
+tr.even {
+    background-color: bisque;
+}
+
+
+.template-display {
+    
+}
+.template-edit {
+    display: none;
+}
+.template-item.editing .template-edit{
+    display: block;
+}
+.template-item.editing .template-display{
+    display: none;
+}
