@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/08/2016, 08:18:27 PM
+    Author     : Administrador
+*/
+body{
+  background-color: #2E64FE;
+  font-size: 12px;
+}
+
+.egcc_page{
+  background-color: #E6E6E6;
+  color: #424242;
+  margin: 10px auto;
+  padding: 10px;
+  width: 900px;
+}
+
+.egcc_header{
+  background-color: #FFFFFF;
+  margin: 5px;
+  padding: 5px;
+  width: 880px;
+}
+
+.egcc_menu{
+  background-color: #E0ECF8;
+  margin: 5px;
+  padding: 5px;
+  width: 880px;
+}
+
+.egcc_work{
+  background-color: #FFFFFF;
+  margin: 5px;
+  padding: 5px;
+  width: 880px;
+}

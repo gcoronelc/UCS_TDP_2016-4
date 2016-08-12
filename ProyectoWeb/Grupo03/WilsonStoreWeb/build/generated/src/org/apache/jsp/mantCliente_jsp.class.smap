@@ -1,0 +1,20 @@
+SMAP
+mantCliente_jsp.java
+JSP
+*S JSP
+*F
++ 0 mantCliente.jsp
+mantCliente.jsp
+*L
+5,55:57
+60,4:112,3
+64,6:124
+69:153,8
+70,11:161
+80:195,11
+81:206
+82,6:207,3
+88,2:225
+89,3:174
+91,4:132
+*E

@@ -1,0 +1,109 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+	display: block;
+}
+body {
+	text-align: justify;
+	background: #c0c080;
+	background: url(imagenes/peru_amarillo.gif) no-repeat center center fixed;
+	background-size: cover;
+}
+
+article {
+	background: #FFFBCC;
+	border: 1px solid #999999;
+	padding: 0px 20px 20px 20px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+} 
+
+h1 {
+	font: bold 20px verdana, sans-serif;
+} 
+h2 {
+	font: bold 14px verdana, sans-serif;
+}
+p {
+	text-align: left;
+}
+
+img {
+	margin:auto; /* Centra una imagen*/
+}
+#carrusel {
+	background: #FFFFCC;
+	padding: 0px;
+}
+#container1 {
+	background: #FFFFCC;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+#container2 {
+	background: #FFFFCC;
+	margin-bottom: 10px;
+	padding: 0px 0px;
+}
+#pie {
+	text-align: center;
+	color:#FFF;
+	padding: 20px;
+	margin-bottom: 0px;
+	border-top: 2px solid #999999;
+	background: #000;
+}
+#publicidad {
+	background: #A9D0F5;
+	border: 1px solid #999999;
+	padding: 0px 10px 0px 10px;
+	margin: 0px 10px 0px 0px;
+}
+
+/* Formulario de Contacto  */
+label {
+	width: 80px;	
+	padding: 4px;
+}
+input {
+	width: 140px;	
+	padding: 4px;
+	margin: 5px 5px;	
+}
+textarea {
+	width: 200px;	
+	padding: 4px;
+	margin: 5px 5px;	
+}
+#formulario {
+	width: 400px;
+	margin: 0 auto;
+	background-color:#F0EFEF;
+	padding: 10px 30px;
+	border-radius: 6px;
+	border:thin #C1C1C1;
+}
+
+/* Videos de Youtube  */
+.contenedor{
+    max-width:640px;/* Recuerden aplicar el ancho máximo del contenedor*/
+    margin:0 auto;
+}
+.videoResponsive{
+    margin:0 auto;
+    height:0px;
+    width:100%; /*tomará el tamaño al 100% del #contenedor*/
+    padding-top:56.25%; /*nos ayudara a la proporción del video*/
+    position:relative;
+}
+.videoResponsive iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}

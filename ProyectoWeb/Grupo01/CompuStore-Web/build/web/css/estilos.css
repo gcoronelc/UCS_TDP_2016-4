@@ -1,0 +1,39 @@
+body{
+  background-color: #2E64FE;
+  font-size: 12px;
+}
+
+h1{
+  color: #0B4C5F;
+  font-size: 18px;
+  border-bottom: 1px solid #0B4C5F;
+}
+
+.egcc_page{
+  background-color: #E6E6E6;
+  color: #424242;
+  margin: 10px auto;
+  padding: 10px;
+  width: 900px;
+}
+
+.egcc_header{
+  background-color: #FFFFFF;
+  margin: 5px;
+  padding: 5px;
+  width: 880px;
+}
+
+.egcc_menu{
+  background-color: #E0ECF8;
+  margin: 5px;
+  padding: 5px;
+  width: 880px;
+}
+
+.egcc_work{
+  background-color: #FFFFFF;
+  margin: 5px;
+  padding: 5px;
+  width: 880px;
+}
